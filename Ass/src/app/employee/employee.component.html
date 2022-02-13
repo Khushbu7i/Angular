@@ -1,0 +1,115 @@
+
+<div class= countainer>
+
+<form #form = "ngForm">
+ <div class="form-group">
+      <label for="Fname">First Name:</label><br>
+      <input id="Fname" name="FirstName" class="form control" ngModel/>
+    </div>
+
+ <div class="form-group">
+      <label for="LName">Last Name:</label><br>
+      <input id="LName" name="LastName" class="form control" ngModel/>
+    </div>
+
+ <div class="form-group">
+   <label for="Email">Email:</label><br>
+   <input id="Email" name="Email" class="form control" ngModel/>
+ </div>
+
+ <div class="form-group">
+   <label for="Contact">Contact Number:</label><br>
+   <input id="Contact" name="Contact" class="form control" ngModel/>
+ </div>
+
+ <div class="form-group">
+   <label for="Address" >Address:</label><br>
+   <textarea class="form-control" id="Address" name="Address" rows="3" ngModel></textarea>
+ </div>
+
+ <div class="form-group">
+   <label for="UserName">User Name:</label><br>
+   <input id="Username" name="UserName" class="form control" ngModel/>
+ </div>
+
+ <div class="form-group">
+   <label for="Password">Password:</label><br>
+   <input type="password" id="Password" name="Password" class="form control" ngModel/>
+ </div>
+
+ <label for="Gender">Gender:</label><br>
+ <div class="form-check" >
+   <input class="form-check-input" type="radio" value=Male name="flexRadioDefault" id="flexRadioDefault1" ngModel>
+   <label class="form-check-label" for="flexRadioDefault1">
+     Male
+   </label>
+ </div>
+<div class="form-check">
+   <input class="form-check-input" type="radio" value=female name="flexRadioDefault" id="flexRadioDefault1" ngModel>
+   <label class="form-check-label" for="flexRadioDefault1">
+     Female
+   </label>
+ </div>
+
+ <label for="Qualification">Qualification:</label>
+<div>
+ <select class="form-select" aria-label="Default select example">
+   <option selected>--select--</option>
+   <option value="1">BSc</option>
+   <option value="2">MSc</option>
+   <option value="3">BCA</option>
+   <option value="3">MCA</option>
+ </select>
+</div>
+
+ <label for="Experience">Experience:</label><br>
+ <div>
+<select class="form-select" aria-label="Default select example">
+   <option selected>--select--</option>
+   <option value="1">No Experience</option>
+   <option value="2">1 year</option>
+   <option value="3">2 year</option>
+   <option value="3">more then 2 year</option>
+</select>
+</div>
+
+ <label for="Lang">Coding languages:</label><br>
+ <div>
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+   <label class="form-check-label" for="flexCheckDefault">
+     C/C++
+   </label>
+ </div>
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+   <label class="form-check-label" for="flexCheckDefault">
+     Java
+   </label>
+ </div>
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+   <label class="form-check-label" for="flexCheckDefault">
+     C#
+   </label>
+ </div>
+
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+   <label class="form-check-label" for="flexCheckDefault">
+     PHP
+   </label>
+ </div>
+ <div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+   <label class="form-check-label" for="flexCheckDefault">
+     Python
+   </label>
+ </div>
+ </div>
+
+<button class="btn btn-primary">Submit</button>
+
+</form>
+</div>
+{{form.value | json}}
